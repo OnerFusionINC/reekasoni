@@ -36,12 +36,14 @@
 
 <!--== theme-style -->
 <link href="css/theme-style.css" rel="stylesheet" type="text/css" />
+<!--== testimonial-slider-style -->
+<link href="css/testimonial-slider.css" rel="stylesheet" type="text/css" />
 
 <!-- inject css end -->
 
 </head>
 
-<body>
+<body class="education-page">
 
 <!-- page wrapper start -->
 
@@ -133,6 +135,7 @@
 <!--body content start-->
 
 <div class="page-content">
+  
 
 <section>
   <div class="container">
@@ -199,56 +202,8 @@
       </div>
       <div class="col-lg-9 ps-lg-5 mt-5 mt-lg-0">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="dark-gradient rounded p-5" data-aos="zoom-in">
-              <div class="timeline-items">
-                <div class="timeline-years"> 2010-2013 </div>
-                <div class="timeline-title"> Bachelor of Arts, Major in English </div>
-                <div class="timeline-subtext"> Bangkok University, Thailand </div>
-                <div class="timeline-desc">
-                  <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has.</p>
-                </div>
-              </div>
-            </div>
+          
           </div>
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="dark-gradient rounded p-5" data-aos="zoom-in">
-              <div class="timeline-items">
-                <div class="timeline-years"> 2008 - 2012 </div>
-                <div class="timeline-title"> BSC in Engineering </div>
-                <div class="timeline-subtext"> National University </div>
-                <div class="timeline-desc">
-                  <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-4">
-            <div class="dark-gradient rounded p-5" data-aos="zoom-in">
-              <div class="timeline-items">
-                <div class="timeline-years"> 2012-2014 </div>
-                <div class="timeline-title"> Front-End Developer </div>
-                <div class="timeline-subtext"> Oxford University </div>
-                <div class="timeline-desc">
-                  <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-4">
-            <div class="dark-gradient rounded p-5" data-aos="zoom-in">
-              <div class="timeline-items">
-                <div class="timeline-years"> 2014-2023 </div>
-                <div class="timeline-title"> Freelancer</div>
-                <div class="timeline-subtext"> Oxford University </div>
-                <div class="timeline-desc">
-                  <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -333,6 +288,127 @@
 </script>
 
 <script type="module" src="js/particle.js"></script> 
+<script>
+  // Create an array with 52 elements to loop over
+  const testimonialData = [
+    {
+      image: 'images/testimonial/Naiyachon Charoenwat (Nathan).jpeg',
+      name: 'Naiyachon Charoenwat (Nathan)',
+      title: 'Engineer',
+      description: '"Even though I had been working with Reeka for just a short period of time under her leadership, her expertise in tech knowledge, recruitment strategy, market insights, and management skills was beyond my expectations. She knows what should be started, how it should be handled, and the way things should be done. I was really impressed by her fairness in working with candidates, recruiters, and hiring managers. If you have Reeka on your team, you will realize that you have a truly great person working with you !"',
+    },
+    {
+      image: 'images/testimonial/Suwit T.jpg',
+      name: 'Suwit T',
+      title: 'Tech Talent Acquisition',
+      description: '"I’ve had the chance to work with Reeka, and she’s been amazing as a Lead Technical Sourcer in the Tech Talent Acquisition team. Her strong sense of ownership and sourcing skills are exceptional. What really stands out is Reeka’s willingness to help out wherever needed, even if sometimes it’s out of her scope. She’s a true team player and always brings a positive vibe to the team."',
+    },
+    {
+      image: 'images/testimonial/Shivendra Gangwar.jpg',
+      name: 'Shivendra Gangwar',
+      title: 'Engineer',
+      description: '"Reeka consistently provides timely and helpful updates throughout the hiring process, ensuring candidates are well-informed and comfortable. Her clear communication and approachable demeanor make for a positive experience from start to finish. Reeka’s dedication and strategic skills in recruitment enable her to effectively match top talent with the company’s needs. She is a valuable asset to any organization.Reeka consistently provides timely and helpful updates throughout the hiring process, ensuring candidates are well-informed and comfortable. Her clear communication and approachable demeanor make for a positive experience from start to finish. Reeka’s dedication and strategic skills in recruitment enable her to effectively match top talent with the company’s needs. She is a valuable asset to any organization."',
+    },
+    
+    {
+      image: 'images/testimonial/Tomas Kalina.jpg',
+      name: 'Tomas Kalina',
+      title: 'Global Tech Talent Stalker🥇 Wolt',
+      description: '"Reeka possesses a unique blend of delivery-focused, data-driven approach, and strong empathy. As a manager, she is always approachable and more than willing to help anyone on the team, as well as those beyond its boundaries. Despite holding a leadership role at Agoda, she keeps herself up to date with the latest practices in Talent Acquisition & Sourcing and serves as a role model for their application. If you look for a very passionate, genuine and determined leader with extraordinary stakeholder management skills, you would hardly find someone better than Reeka.Reeka possesses a unique blend of delivery-focused, data-driven approach, and strong empathy. As a manager, she is always approachable and more than willing to help anyone on the team, as well as those beyond its boundaries. Despite holding a leadership role at Agoda, she keeps herself up to date with the latest practices in Talent Acquisition & Sourcing and serves as a role model for their application. If you look for a very passionate, genuine and determined leader with extraordinary stakeholder management skills, you would hardly find someone better than Reeka."',
+    },
+    {
+      image: 'images/testimonial/testimonial3.jpg',
+      name: 'Jane Smith',
+      title: 'Product Designer',
+      description: '"Working with Reeka has been an absolute pleasure."',
+    },
+    // ... add 49 more testimonial objects here ...
+    {
+      image: 'images/testimonial/testimonial52.jpg', // Replace with actual image path
+      name: 'Last One',
+      title: 'End of the line',
+      description: '"This is the end."',
+    },
+  ];
+
+  // Get the parent element where we'll add testimonials
+  const testimonialsContainer = document.querySelector('.col-lg-9 .row');
+
+  testimonialData.forEach((testimonial, index) => {
+    // Create the main container for each testimonial
+    const colDiv = document.createElement('div');
+    colDiv.classList.add('col-lg-6');
+    if (index > 0) {
+        colDiv.classList.add('mt-4'); // Add margin-top for subsequent testimonials
+    }
+
+    // Create the inner dark-gradient div
+    const darkGradientDiv = document.createElement('div');
+    darkGradientDiv.classList.add('dark-gradient', 'rounded', 'p-5');
+    darkGradientDiv.setAttribute('data-aos', 'zoom-in');
+
+    // Create the timeline-items div
+    const timelineItemsDiv = document.createElement('div');
+    timelineItemsDiv.classList.add('timeline-items');
+
+    // Create the testimonial-image div
+    const testimonialImageDiv = document.createElement('div');
+    testimonialImageDiv.classList.add('testimonial-image');
+
+    // Create the image element
+    const img = document.createElement('img');
+    img.src = testimonial.image; // Use image from data
+    img.alt = testimonial.name; // Use name as alt text
+    img.classList.add('img-fluid', 'rounded-circle', 'edu-testimonial-image');
+     // Append the image after setting properties
+      testimonialImageDiv.appendChild(img);
+
+    // Create the timeline-title div
+    const timelineTitleDiv = document.createElement('div');
+    timelineTitleDiv.classList.add('timeline-title');
+
+    // Create a span for the name
+    const nameSpan = document.createElement('span');
+    nameSpan.textContent = testimonial.name;
+
+    // Create a line break element
+    const br = document.createElement('br');
+
+    // Create a span for the title
+    const titleSpan = document.createElement('span');
+    titleSpan.textContent = testimonial.title;
+
+    // Append the name, line break, and title to the timelineTitleDiv
+    timelineTitleDiv.appendChild(nameSpan);
+    timelineTitleDiv.appendChild(br);
+    timelineTitleDiv.appendChild(titleSpan);
+
+    // Create the timeline-desc div
+    const timelineDescDiv = document.createElement('div');
+    timelineDescDiv.classList.add('timeline-desc');
+
+    // Create the paragraph element for the description
+    const p = document.createElement('p');
+    p.textContent = testimonial.description; // Use description from data
+
+    // Append the elements in the correct order
+  
+    timelineDescDiv.appendChild(p);
+    timelineItemsDiv.appendChild(testimonialImageDiv);
+    timelineItemsDiv.appendChild(timelineTitleDiv);
+    timelineItemsDiv.appendChild(timelineDescDiv);
+    darkGradientDiv.appendChild(timelineItemsDiv);
+    colDiv.appendChild(darkGradientDiv);
+
+    // Append the colDiv to the container
+    testimonialsContainer.appendChild(colDiv);
+});
+</script>
+
+
+ 
+  
+
 
 <!-- inject js end -->
 
