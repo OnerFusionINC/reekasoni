@@ -192,6 +192,11 @@ iframe { width: 100%; border: none; pointer-events: auto; }
   margin-right: auto; /* Center the image horizontally */
 }
 
+.portfolio-single-page .client-overview { /* Adjust '.portfolio-single-page' and '.client-overview' if needed */
+  width: 100%;
+}
+
+
 
 
 .webgl{width: 100% !important;
