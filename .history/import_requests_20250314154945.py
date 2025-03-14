@@ -9,7 +9,7 @@ from selenium.common.exceptions import TimeoutException
 
 def scrape_linkedin_recommendations(url):
     """
-    Scrapes LinkedIn recommendations (Testimonials) from a given profile URL and
+    Scrapes LinkedIn recommendations (testimonials) from a given profile URL and
     formats them as HTML for a carousel.
 
     Args:
@@ -62,16 +62,16 @@ def scrape_linkedin_recommendations(url):
           name = card.find("span", class_="name").get_text(strip=True)
           position = card.find("span", class_="description").get_text(strip=True)
           
-          # Generate HTML output for each Testimonial
+          # Generate HTML output for each testimonial
           recommendations_html += f"""
 <div class="carousel-item">
-  <div class="Testimonial-item">
-    <div class="Testimonial-image">
-      <img src="images/Testimonial/{name}.jpg" alt="{name}" class="img-fluid rounded-circle" onerror="this.onerror=null;this.src='images/Testimonial/default.png'">
+  <div class="testimonial-item">
+    <div class="testimonial-image">
+      <img src="images/testimonial/{name}.jpg" alt="{name}" class="img-fluid rounded-circle" onerror="this.onerror=null;this.src='images/testimonial/default.png'">
     </div>
-    <div class="Testimonial-content">
+    <div class="testimonial-content">
       <p>"{text}"</p>
-      <div class="Testimonial-author">- {name}, {position}</div>
+      <div class="testimonial-author">- {name}, {position}</div>
     </div>
   </div>
 </div>
