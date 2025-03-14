@@ -1,16 +1,16 @@
-/* Custom styles for the testimonial carousel */
-.testimonial-section {
+/* Custom styles for the Testimonial carousel */
+.Testimonial-section {
   padding: 40px 0;
   background-color: #110904; /* Dark background */
   position: relative;
 }
 
-.testimonial-carousel {
+.Testimonial-carousel {
   width: 80%;
   margin: auto;
 }
 
-.testimonial-item {
+.Testimonial-item {
   background-color: #110904; 
   padding: 30px;
   border-radius: 10px;
@@ -20,11 +20,11 @@
 }
 
 
-.testimonial-content {
+.Testimonial-content {
   margin-bottom: 20px;
 }
 
-.testimonial-image {
+.Testimonial-image {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -33,14 +33,14 @@
   display: inline-block;
 }
 
-.testimonial-image img {
+.Testimonial-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 
-.testimonial-author {
+.Testimonial-author {
   font-style: italic;
   color: #6c757d;
 }
@@ -113,16 +113,16 @@
   font-size: 20px;
 }
 
-/* Ensure testimonial text doesn't wrap under the button */
-.testimonial-content p {
+/* Ensure Testimonial text doesn't wrap under the button */
+.Testimonial-content p {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
   white-space: normal;
 }
 
-/* Override the theme-style.css rule specifically for testimonial images */
-.testimonial-section .testimonial-carousel .testimonial-image {
+/* Override the theme-style.css rule specifically for Testimonial images */
+.Testimonial-section .Testimonial-carousel .Testimonial-image {
   display: block; /*This will ensure the image is displayed as a block level element */
 }
 
@@ -136,7 +136,7 @@
     left: 10px;
     right: 10px;
   }
-  .testimonial-carousel {
+  .Testimonial-carousel {
     width: 100%;
   }
 }

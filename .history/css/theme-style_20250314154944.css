@@ -186,7 +186,7 @@ iframe { width: 100%; border: none; pointer-events: auto; }
     .theme-title p { font-size: 16px; }
 }
 
-.edu-testimonial-image {
+.edu-Testimonial-image {
   display: block; /* Ensure that margin: 0 auto; works */
   margin-left: auto;
   margin-right: auto; /* Center the image horizontally */
